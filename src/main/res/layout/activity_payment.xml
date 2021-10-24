@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/peach_door"
+        android:alpha="0.6"/>
+    <TextView
+        android:id="@+id/txtpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Payment"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+    <EditText
+        android:id="@+id/amount"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtpay"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_border"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Enter Amount"/>
+    <TextView
+        android:id="@+id/msgtxt"
+        android:layout_below="@+id/paybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:hint="Details"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:id="@+id/paybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@id/amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Pay"
+        android:onClick="paybtn"
+        android:background="@drawable/rounded_buttonpink"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dashb"
+        android:layout_below="@id/msgtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:onClick="back"
+        android:text="Back"
+        android:background="@drawable/rounded_buttonpink"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

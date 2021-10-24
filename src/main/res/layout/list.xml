@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="7dp">
+
+            <ImageView
+                android:layout_marginLeft="0dp"
+                android:id="@+id/imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher_round"/>
+            <TextView
+                android:layout_toRightOf="@+id/imageview"
+                android:id="@+id/title"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/imageview"
+                android:layout_below="@+id/title"
+                android:id="@+id/add"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/imageview"
+                android:layout_below="@+id/add"
+                android:id="@+id/phone"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textSize="20sp"/>
+
+
+
+
+            <TextView
+                android:layout_toRightOf="@+id/title"
+                android:id="@+id/nm"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/add"
+                android:layout_below="@+id/nm"
+                android:id="@+id/address"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/phone"
+                android:layout_below="@+id/address"
+                android:id="@+id/phno"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/rooflogo"
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/roofinal" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Going to be away from home for long?.. We got you covered!"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/rooflogo"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/roof_peach"
+        android:fontFamily="@font/carter_one"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
